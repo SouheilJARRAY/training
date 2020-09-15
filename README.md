@@ -1,12 +1,20 @@
-HelloWorld
-==========
+package designPattern;
 
-A simple Java application that can be compiled into a .jar file using Maven.
+public class Client {
 
-To build
---------
-    mvn clean package
+	public static void main(String[] args) {
+	    ProduitFactory produitFactory = new ProduitFactory();
 
-To run
-------
-    java -cp target/helloworld-1.0.jar com.coveros.demo.helloworld.HelloWorld
+	    ProduitA produitA = null;
+
+	    produitA = produitFactory.getProduitA(ProduitFactory.TYPE_PRODUITA1);
+	    produitA.methodeA();
+
+	    produitA = produitFactory.getProduitA(ProduitFactory.TYPE_PRODUITA2);
+	    produitA.methodeA();
+
+	    produitA = produitFactory.getProduitA(3);
+	    produitA.methodeA();
+
+	  }
+	}
