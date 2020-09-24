@@ -2829,6 +2829,27 @@ public class checkSameNumbers extends JFrame {
 			b19.setVisible(true);
 			b20.setVisible(true);
 			
+			b1.setText("");
+			b2.setText("");
+			b3.setText("");
+			b4.setText("");
+			b5.setText("");
+			b6.setText("");
+			b7.setText("");
+			b8.setText("");
+			b9.setText("");
+			b10.setText("");
+			b11.setText("");
+			b12.setText("");
+			b13.setText("");
+			b14.setText("");
+			b15.setText("");
+			b16.setText("");
+			b17.setText("");
+			b18.setText("");
+			b19.setText("");
+			b20.setText("");
+			
 			ArrayList<String> list = new ArrayList<String>();
 			
 			lINIT.setText("1");
