@@ -111,15 +111,17 @@ public class checkSameNumbers extends JFrame {
 		
 		lNT1= new JLabel();
 		lNT1.setBounds(400,80,100,100);
+		lNT1.setText("0");
 		
 		lNRC= new JLabel("number of right checks:");
 		lNRC.setBounds(370,170,150,100);
 		
 		lNRC1= new JLabel();
 		lNRC1.setBounds(400,200,100,100);
+		lNRC1.setText("0");
 		
 		lT= new JLabel();
-		lT.setBounds(110,400,70,50);
+		lT.setBounds(80,290,110,50);
 		
 		lINIT= new JLabel();
 		lINIT.setBounds(110,290,70,50);
@@ -324,6 +326,28 @@ public class checkSameNumbers extends JFrame {
 							lNRC1.setText(Integer.toString(winCounter));
 							if (winCounter == 10) {
 								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+					                (26 <= counter && counter <= 30) ? 2 : 3) {
+								case 0 :{
+									lNRC1.setText("winner: perfect");
+									break;
+								}
+								case 1:{
+									lNRC1.setText("winner: good enough");
+									break;
+								}
+								case 2:{
+									lNRC1.setText("winner: not bad");
+									break;
+								}
+								case 3:{
+									lNRC1.setText("winner: very bad");
+									break;
+								}
+								}
+								
 							}
 						}
 						b1.setText("");
@@ -429,6 +453,28 @@ public class checkSameNumbers extends JFrame {
 							lNRC1.setText(Integer.toString(winCounter));
 							if (winCounter == 10) {
 								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+					                (26 <= counter && counter <= 30) ? 2 : 3) {
+								case 0 :{
+									lNRC1.setText("winner: perfect");
+									break;
+								}
+								case 1:{
+									lNRC1.setText("winner: good enough");
+									break;
+								}
+								case 2:{
+									lNRC1.setText("winner: not bad");
+									break;
+								}
+								case 3:{
+									lNRC1.setText("winner: very bad");
+									break;
+								}
+								}
+								
 							}
 						}
 						b1.setText("");
@@ -535,6 +581,28 @@ public class checkSameNumbers extends JFrame {
 							lNRC1.setText(Integer.toString(winCounter));
 							if (winCounter == 10) {
 								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+					                (26 <= counter && counter <= 30) ? 2 : 3) {
+								case 0 :{
+									lNRC1.setText("winner: perfect");
+									break;
+								}
+								case 1:{
+									lNRC1.setText("winner: good enough");
+									break;
+								}
+								case 2:{
+									lNRC1.setText("winner: not bad");
+									break;
+								}
+								case 3:{
+									lNRC1.setText("winner: very bad");
+									break;
+								}
+								}
+								
 							}
 						}
 						b1.setText("");
@@ -640,6 +708,28 @@ public class checkSameNumbers extends JFrame {
 							lNRC1.setText(Integer.toString(winCounter));
 							if (winCounter == 10) {
 								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+					                (26 <= counter && counter <= 30) ? 2 : 3) {
+								case 0 :{
+									lNRC1.setText("winner: perfect");
+									break;
+								}
+								case 1:{
+									lNRC1.setText("winner: good enough");
+									break;
+								}
+								case 2:{
+									lNRC1.setText("winner: not bad");
+									break;
+								}
+								case 3:{
+									lNRC1.setText("winner: very bad");
+									break;
+								}
+								}
+								
 							}
 						}
 						b1.setText("");
@@ -745,6 +835,28 @@ public class checkSameNumbers extends JFrame {
 							lNRC1.setText(Integer.toString(winCounter));
 							if (winCounter == 10) {
 								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+					                (26 <= counter && counter <= 30) ? 2 : 3) {
+								case 0 :{
+									lNRC1.setText("winner: perfect");
+									break;
+								}
+								case 1:{
+									lNRC1.setText("winner: good enough");
+									break;
+								}
+								case 2:{
+									lNRC1.setText("winner: not bad");
+									break;
+								}
+								case 3:{
+									lNRC1.setText("winner: very bad");
+									break;
+								}
+								}
+								
 							}
 						}
 						b1.setText("");
@@ -850,6 +962,28 @@ public class checkSameNumbers extends JFrame {
 							lNRC1.setText(Integer.toString(winCounter));
 							if (winCounter == 10) {
 								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+					                (26 <= counter && counter <= 30) ? 2 : 3) {
+								case 0 :{
+									lNRC1.setText("winner: perfect");
+									break;
+								}
+								case 1:{
+									lNRC1.setText("winner: good enough");
+									break;
+								}
+								case 2:{
+									lNRC1.setText("winner: not bad");
+									break;
+								}
+								case 3:{
+									lNRC1.setText("winner: very bad");
+									break;
+								}
+								}
+								
 							}
 						}
 						b1.setText("");
@@ -955,6 +1089,28 @@ public class checkSameNumbers extends JFrame {
 							lNRC1.setText(Integer.toString(winCounter));
 							if (winCounter == 10) {
 								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+					                (26 <= counter && counter <= 30) ? 2 : 3) {
+								case 0 :{
+									lNRC1.setText("winner: perfect");
+									break;
+								}
+								case 1:{
+									lNRC1.setText("winner: good enough");
+									break;
+								}
+								case 2:{
+									lNRC1.setText("winner: not bad");
+									break;
+								}
+								case 3:{
+									lNRC1.setText("winner: very bad");
+									break;
+								}
+								}
+								
 							}
 						}
 						b1.setText("");
@@ -1060,6 +1216,28 @@ public class checkSameNumbers extends JFrame {
 							lNRC1.setText(Integer.toString(winCounter));
 							if (winCounter == 10) {
 								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+					                (26 <= counter && counter <= 30) ? 2 : 3) {
+								case 0 :{
+									lNRC1.setText("winner: perfect");
+									break;
+								}
+								case 1:{
+									lNRC1.setText("winner: good enough");
+									break;
+								}
+								case 2:{
+									lNRC1.setText("winner: not bad");
+									break;
+								}
+								case 3:{
+									lNRC1.setText("winner: very bad");
+									break;
+								}
+								}
+								
 							}
 						}
 						b1.setText("");
@@ -1165,6 +1343,28 @@ public class checkSameNumbers extends JFrame {
 							lNRC1.setText(Integer.toString(winCounter));
 							if (winCounter == 10) {
 								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+					                (62 <= counter && counter <= 30) ? 2 : 3) {
+								case 0 :{
+									lNRC1.setText("winner: perfect");
+									break;
+								}
+								case 1:{
+									lNRC1.setText("winner: good enough");
+									break;
+								}
+								case 2:{
+									lNRC1.setText("winner: not bad");
+									break;
+								}
+								case 3:{
+									lNRC1.setText("winner: very bad");
+									break;
+								}
+								}
+								
 							}
 						}
 						b1.setText("");
@@ -1270,6 +1470,28 @@ public class checkSameNumbers extends JFrame {
 							lNRC1.setText(Integer.toString(winCounter));
 							if (winCounter == 10) {
 								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+					                (26 <= counter && counter <= 30) ? 2 : 3) {
+								case 0 :{
+									lNRC1.setText("winner: perfect");
+									break;
+								}
+								case 1:{
+									lNRC1.setText("winner: good enough");
+									break;
+								}
+								case 2:{
+									lNRC1.setText("winner: not bad");
+									break;
+								}
+								case 3:{
+									lNRC1.setText("winner: very bad");
+									break;
+								}
+								}
+								
 							}
 						}
 						b1.setText("");
@@ -1375,6 +1597,28 @@ public class checkSameNumbers extends JFrame {
 							lNRC1.setText(Integer.toString(winCounter));
 							if (winCounter == 10) {
 								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+					                (26 <= counter && counter <= 30) ? 2 : 3) {
+								case 0 :{
+									lNRC1.setText("winner: perfect");
+									break;
+								}
+								case 1:{
+									lNRC1.setText("winner: good enough");
+									break;
+								}
+								case 2:{
+									lNRC1.setText("winner: not bad");
+									break;
+								}
+								case 3:{
+									lNRC1.setText("winner: very bad");
+									break;
+								}
+								}
+								
 							}
 						}
 						b1.setText("");
@@ -1480,6 +1724,28 @@ public class checkSameNumbers extends JFrame {
 							lNRC1.setText(Integer.toString(winCounter));
 							if (winCounter == 10) {
 								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+					                (26 <= counter && counter <= 30) ? 2 : 3) {
+								case 0 :{
+									lNRC1.setText("winner: perfect");
+									break;
+								}
+								case 1:{
+									lNRC1.setText("winner: good enough");
+									break;
+								}
+								case 2:{
+									lNRC1.setText("winner: not bad");
+									break;
+								}
+								case 3:{
+									lNRC1.setText("winner: very bad");
+									break;
+								}
+								}
+								
 							}
 						}
 						b1.setText("");
@@ -1585,6 +1851,28 @@ public class checkSameNumbers extends JFrame {
 							lNRC1.setText(Integer.toString(winCounter));
 							if (winCounter == 10) {
 								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+					                (26 <= counter && counter <= 30) ? 2 : 3) {
+								case 0 :{
+									lNRC1.setText("winner: perfect");
+									break;
+								}
+								case 1:{
+									lNRC1.setText("winner: good enough");
+									break;
+								}
+								case 2:{
+									lNRC1.setText("winner: not bad");
+									break;
+								}
+								case 3:{
+									lNRC1.setText("winner: very bad");
+									break;
+								}
+								}
+								
 							}
 						}
 						b1.setText("");
@@ -1690,6 +1978,28 @@ public class checkSameNumbers extends JFrame {
 							lNRC1.setText(Integer.toString(winCounter));
 							if (winCounter == 10) {
 								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+					                (26 <= counter && counter <= 30) ? 2 : 3) {
+								case 0 :{
+									lNRC1.setText("winner: perfect");
+									break;
+								}
+								case 1:{
+									lNRC1.setText("winner: good enough");
+									break;
+								}
+								case 2:{
+									lNRC1.setText("winner: not bad");
+									break;
+								}
+								case 3:{
+									lNRC1.setText("winner: very bad");
+									break;
+								}
+								}
+								
 							}
 						}
 						b1.setText("");
@@ -1795,6 +2105,28 @@ public class checkSameNumbers extends JFrame {
 							lNRC1.setText(Integer.toString(winCounter));
 							if (winCounter == 10) {
 								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+					                (26 <= counter && counter <= 30) ? 2 : 3) {
+								case 0 :{
+									lNRC1.setText("winner: perfect");
+									break;
+								}
+								case 1:{
+									lNRC1.setText("winner: good enough");
+									break;
+								}
+								case 2:{
+									lNRC1.setText("winner: not bad");
+									break;
+								}
+								case 3:{
+									lNRC1.setText("winner: very bad");
+									break;
+								}
+								}
+								
 							}
 						}
 						b1.setText("");
@@ -1900,6 +2232,28 @@ public class checkSameNumbers extends JFrame {
 							lNRC1.setText(Integer.toString(winCounter));
 							if (winCounter == 10) {
 								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+					                (26 <= counter && counter <= 30) ? 2 : 3) {
+								case 0 :{
+									lNRC1.setText("winner: perfect");
+									break;
+								}
+								case 1:{
+									lNRC1.setText("winner: good enough");
+									break;
+								}
+								case 2:{
+									lNRC1.setText("winner: not bad");
+									break;
+								}
+								case 3:{
+									lNRC1.setText("winner: very bad");
+									break;
+								}
+								}
+								
 							}
 						}
 						b1.setText("");
@@ -2005,6 +2359,28 @@ public class checkSameNumbers extends JFrame {
 							lNRC1.setText(Integer.toString(winCounter));
 							if (winCounter == 10) {
 								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+					                (26 <= counter && counter <= 30) ? 2 : 3) {
+								case 0 :{
+									lNRC1.setText("winner: perfect");
+									break;
+								}
+								case 1:{
+									lNRC1.setText("winner: good enough");
+									break;
+								}
+								case 2:{
+									lNRC1.setText("winner: not bad");
+									break;
+								}
+								case 3:{
+									lNRC1.setText("winner: very bad");
+									break;
+								}
+								}
+								
 							}
 						}
 						b1.setText("");
@@ -2110,6 +2486,28 @@ public class checkSameNumbers extends JFrame {
 							lNRC1.setText(Integer.toString(winCounter));
 							if (winCounter == 10) {
 								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+						            (26 <= counter && counter <= 30) ? 2 : 3) {
+								case 0 :{
+									lNRC1.setText("winner: perfect");
+									break;
+								}
+								case 1:{
+									lNRC1.setText("winner: good enough");
+									break;
+								}
+								case 2:{
+									lNRC1.setText("winner: not bad");
+									break;
+								}
+								case 3:{
+									lNRC1.setText("winner: very bad");
+									break;
+								}
+								}
+								
 							}
 						}
 						b1.setText("");
@@ -2215,6 +2613,28 @@ public class checkSameNumbers extends JFrame {
 							lNRC1.setText(Integer.toString(winCounter));
 							if (winCounter == 10) {
 								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+					                (26 <= counter && counter <= 30) ? 2 : 3) {
+								case 0 :{
+									lNRC1.setText("winner: perfect");
+									break;
+								}
+								case 1:{
+									lNRC1.setText("winner: good enough");
+									break;
+								}
+								case 2:{
+									lNRC1.setText("winner: not bad");
+									break;
+								}
+								case 3:{
+									lNRC1.setText("winner: very bad");
+									break;
+								}
+								}
+								
 							}
 						}
 						b1.setText("");
@@ -2325,6 +2745,28 @@ public class checkSameNumbers extends JFrame {
 							lNRC1.setText(Integer.toString(winCounter));
 							if (winCounter == 10) {
 								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+					                (26 <= counter && counter <= 30) ? 2 : 3) {
+								case 0 :{
+									lNRC1.setText("winner: perfect");
+									break;
+								}
+								case 1:{
+									lNRC1.setText("winner: good enough");
+									break;
+								}
+								case 2:{
+									lNRC1.setText("winner: not bad");
+									break;
+								}
+								case 3:{
+									lNRC1.setText("winner: very bad");
+									break;
+								}
+								}
+								
 							}
 						}
 						b1.setText("");
@@ -2363,7 +2805,9 @@ public class checkSameNumbers extends JFrame {
 		@Override
 		public void actionPerformed(ActionEvent arg0)  {
 			// TODO Auto-generated method stub
-			start.setText("start");
+			start.setText("restart");
+			lNT1.setText("0");
+			lNRC1.setText("0");
 			b1.setVisible(true);
 			b2.setVisible(true);
 			b3.setVisible(true);
@@ -2439,6 +2883,9 @@ public class checkSameNumbers extends JFrame {
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
 			// TODO Auto-generated method stub
+			start.setText("start");
+			lNT1.setText("0");
+			lNRC1.setText("0");
 			lINIT.setText("");
 			b1.setText("");
 			b2.setText("");
