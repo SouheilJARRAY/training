@@ -14,6 +14,7 @@ public class CSNBetterVersion extends JFrame {
 	
 	public CSNBetterVersion( ) {
 
+		//create buttons
 		b1= new JButton();
 		b1.setBounds(50,50,50,50);
 		b1.addActionListener(new check());
@@ -103,6 +104,7 @@ public class CSNBetterVersion extends JFrame {
 		end.setBounds(200,290,100,50);
 		end.addActionListener(new end());
 		
+		//create labels relative to buttons
 		lNT= new JLabel("number of tries:");
 		lNT.setBounds(370,50,100,100);
 		
@@ -121,7 +123,7 @@ public class CSNBetterVersion extends JFrame {
 		lT.setBounds(80,290,110,50);
 		
 		lINIT= new JLabel();
-		lINIT.setBounds(110,290,70,50);
+		lINIT.setBounds(110,600,70,50);
 		
 		l1= new JLabel();
 		l1.setBounds(370,50,100,100);
@@ -186,6 +188,7 @@ public class CSNBetterVersion extends JFrame {
 		l20= new JLabel();
 		l20.setBounds(290,230,50,50);
 		
+		//add buttons and labels to the window
 		add(b1);
 		add(b2);
 		add(b3);
@@ -235,7 +238,8 @@ public class CSNBetterVersion extends JFrame {
 		add(lNRC1);
 		add(lT);
 		
-		setSize(600,500);
+		//configuration of the window
+		setSize(550,400);
 		setLayout(null);
 		setTitle("check same numbers");
 		setVisible(true);
@@ -245,13 +249,14 @@ public class CSNBetterVersion extends JFrame {
 		
 		new CSNBetterVersion();
 	}
-	
+	//action class for buttons
 	public class check implements ActionListener {
 
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
 			// TODO Auto-generated method stub
 			
+			//create hashMap assign every label to the adequate button
 			HashMap<JLabel, JButton> link = new HashMap<JLabel, JButton>();
 			link.put(l1,b1);
 			link.put(l2,b2);
@@ -276,154 +281,152 @@ public class CSNBetterVersion extends JFrame {
 			
 			JButton b = (JButton) arg0.getSource();
 			JLabel l = null;
-			for (Map.Entry<JLabel, JButton> entry : link.entrySet())
-			{
-			    if (entry.getValue() == b) {
-	            	  l = entry.getKey();
-			    }}
 			
-			/**for (JLabel o : link.keySet()) {
-				System.out.println("2");
-	              if (link.get(o) == b) {
-	            	  System.out.println("-----------------------------");
-	            	  l = o;
-	            	  System.out.println(l);
-	            	  System.out.println("-----------------------------");  
-	              }
-			}**/
-	            if(lINIT.getText() != "") {
-					if ( b.getText() == "") {
-						counter ++;
+			for (Map.Entry<JLabel, JButton> entry : link.entrySet()) //loop all keys
+			{
+			    if (entry.getValue() == b) { // verify the value
+	            	  l = entry.getKey();    // get the key
+			    }
+			}
+				
+			if(lINIT.getText() != "") {
+				if ( b.getText() == "") {
+					counter ++;	
+					b.setText(l.getText());
+					//check if it is the first hit or the second one
+					if(counter % 2 != 0) {
+						lT.setText(b.getText());// if it is the 1st hit.. save the result in temp var
+						b1.setText("");
+						b2.setText("");
+						b3.setText("");
+						b4.setText("");
+						b5.setText("");
+						b6.setText("");
+						b7.setText("");
+						b8.setText("");
+						b9.setText("");
+						b10.setText("");
+						b11.setText("");
+						b12.setText("");
+						b13.setText("");
+						b14.setText("");
+						b15.setText("");
+						b16.setText("");
+						b17.setText("");
+						b18.setText("");
+						b19.setText("");
+						b20.setText("");
+					}
+					b.setText(lT.getText());
+					if(counter % 2 == 0) {
 						b.setText(l.getText());
-						if(counter % 2 != 0) {
-							lT.setText(b.getText());
-						}
-						
-						if(counter % 2 == 0) {
-								lNT1.setText(Integer.toString(counter/2));
-								if(b.getText() == lT.getText()) {
+						lNT1.setText(Integer.toString(counter/2)); // if it is the 2nd hit.. verify and make work done
+						if(b.getText() == lT.getText()) {
 									
-									if (b1.getText() != "") {
-										b1.setVisible(false);
+							if (b1.getText() != "") {
+								b1.setVisible(false);
+							}
+							if (b2.getText() != "") {
+								b2.setVisible(false);
+							}
+							if (b3.getText() != "") {
+								b3.setVisible(false);
+							}
+							if (b4.getText() != "") {
+								b4.setVisible(false);
+							}
+							if (b5.getText() != "") {
+								b5.setVisible(false);
+							}
+							if (b6.getText() != "") {
+								b6.setVisible(false);
+							}
+							if (b7.getText() != "") {
+								b7.setVisible(false);
+							}
+							if (b8.getText() != "") {
+								b8.setVisible(false);
+							}
+							if (b9.getText() != "") {
+								b9.setVisible(false);
+							}
+							if (b10.getText() != "") {
+								b10.setVisible(false);
+							}
+							if (b11.getText() != "") {
+								b11.setVisible(false);
+							}
+							if (b12.getText() != "") {
+								b12.setVisible(false);
+							}
+							if (b13.getText() != "") {
+								b13.setVisible(false);
+							}
+							if (b14.getText() != "") {
+								b14.setVisible(false);
+							}
+							if (b15.getText() != "") {
+								b15.setVisible(false);
+							}
+							if (b16.getText() != "") {
+								b16.setVisible(false);
+							}
+							if (b17.getText() != "") {
+								b17.setVisible(false);
+							}
+							if (b18.getText() != "") {
+								b18.setVisible(false);
+							}
+							if (b19.getText() != "") {
+								b19.setVisible(false);
+							}
+							if (b20.getText() != "") {
+								b20.setVisible(false);
+							}
+							winCounter ++;
+							b.setVisible(false);
+							lNRC1.setText(Integer.toString(winCounter));
+							// show result
+							if (winCounter == 10) {
+								start.setText("try again");
+								counter = Integer.parseInt(lNT1.getText());
+								
+								switch ((1 <= counter && counter <= 20 ) ? 0 :
+					                (21 <= counter && counter <= 25) ? 1 : 
+					                (26 <= counter && counter <= 30) ? 2 : 3) {
+					                case 0 :{
+					                	lNRC1.setText("winner: perfect");
+					                	break;
+					                }
+					                case 1:{
+					                	lNRC1.setText("winner: good enough");
+					                	break;
+					                }
+					                case 2:{
+					                	lNRC1.setText("winner: not bad");
+					                	break;
 									}
-									if (b2.getText() != "") {
-										b2.setVisible(false);
-									}
-									if (b3.getText() != "") {
-										b3.setVisible(false);
-									}
-									if (b4.getText() != "") {
-										b4.setVisible(false);
-									}
-									if (b5.getText() != "") {
-										b5.setVisible(false);
-									}
-									if (b6.getText() != "") {
-										b6.setVisible(false);
-									}
-									if (b7.getText() != "") {
-										b7.setVisible(false);
-									}
-									if (b8.getText() != "") {
-										b8.setVisible(false);
-									}
-									if (b9.getText() != "") {
-										b9.setVisible(false);
-									}
-									if (b10.getText() != "") {
-										b10.setVisible(false);
-									}
-									if (b11.getText() != "") {
-										b11.setVisible(false);
-									}
-									if (b12.getText() != "") {
-										b12.setVisible(false);
-									}
-									if (b13.getText() != "") {
-										b13.setVisible(false);
-									}
-									if (b14.getText() != "") {
-										b14.setVisible(false);
-									}
-									if (b15.getText() != "") {
-										b15.setVisible(false);
-									}
-									if (b16.getText() != "") {
-										b16.setVisible(false);
-									}
-									if (b17.getText() != "") {
-										b17.setVisible(false);
-									}
-									if (b18.getText() != "") {
-										b18.setVisible(false);
-									}
-									if (b19.getText() != "") {
-										b19.setVisible(false);
-									}
-									if (b20.getText() != "") {
-										b20.setVisible(false);
-									}
-									winCounter ++;
-									b.setVisible(false);
-									lNRC1.setText(Integer.toString(winCounter));
-									if (winCounter == 10) {
-										start.setText("try again");
-										counter = Integer.parseInt(lNT1.getText());
-										switch ((1 <= counter && counter <= 20 ) ? 0 :
-							                (21 <= counter && counter <= 25) ? 1 : 
-							                (26 <= counter && counter <= 30) ? 2 : 3) {
-										case 0 :{
-											lNRC1.setText("winner: perfect");
-											break;
-										}
-										case 1:{
-											lNRC1.setText("winner: good enough");
-											break;
-										}
-										case 2:{
-											lNRC1.setText("winner: not bad");
-											break;
-										}
-										case 3:{
-											lNRC1.setText("winner: very bad");
-											break;
-										}
-										}
-										
+									case 3:{
+										lNRC1.setText("winner: very bad");
+										break;
 									}
 								}
-								b1.setText("");
-								b2.setText("");
-								b3.setText("");
-								b4.setText("");
-								b5.setText("");
-								b6.setText("");
-								b7.setText("");
-								b8.setText("");
-								b9.setText("");
-								b10.setText("");
-								b11.setText("");
-								b12.setText("");
-								b13.setText("");
-								b14.setText("");
-								b15.setText("");
-								b16.setText("");
-								b17.setText("");
-								b18.setText("");
-								b19.setText("");
-								b20.setText("");
+							}
+						}else {
+							b.setText(l.getText());
 						}
 					}
+				}
 			}
-	}}
-	
-	
+		}
+	}
+	//action class for start button
 	public class start implements ActionListener  {
 
 		@Override
 		public void actionPerformed(ActionEvent arg0)  {
 			// TODO Auto-generated method stub
-					
+			// init or reset the game		
 			winCounter = 0;
 			counter = 0;
 			start.setText("restart");
@@ -519,11 +522,13 @@ public class CSNBetterVersion extends JFrame {
 			l20.setText(list.get(19));
 		}
 	}
+	//action class for end button
 	public class end implements ActionListener {
 
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
 			// TODO Auto-generated method stub
+			//end the game
 			winCounter = 0;
 			counter = 0;
 			start.setText("start");
@@ -571,8 +576,6 @@ public class CSNBetterVersion extends JFrame {
 			b18.setVisible(true);
 			b19.setVisible(true);
 			b20.setVisible(true);
-
 		}
-		
 	}
 }
