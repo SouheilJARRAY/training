@@ -10,7 +10,7 @@ public class CSNBetterVersion extends JFrame {
 	int winCounter = 0;
 	static JButton b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,start,end;
 	static JLabel lINIT,lNT,lNT1,lNRC,lNRC1,lT,l1,l2,l3,l4,l5,l6,l7,l8,l9,l10,l11,l12,l13,l14,l15,l16,l17,l18,l19,l20;
-	static final HashMap<JLabel, JButton> link = new HashMap<JLabel, JButton>();
+	
 	
 	public CSNBetterVersion( ) {
 
@@ -243,26 +243,6 @@ public class CSNBetterVersion extends JFrame {
 	
 	public static void main (String[] args) {
 		
-		link.put(l1,b1);
-		link.put(l2,b2);
-		link.put(l3,b3);
-		link.put(l4,b4);
-		link.put(l5,b5);
-		link.put(l6,b6);
-		link.put(l7,b7);
-		link.put(l8,b8);
-		link.put(l9,b9);
-		link.put(l10,b10);
-		link.put(l11,b11);
-		link.put(l12,b12);
-		link.put(l13,b13);
-		link.put(l14,b14);
-		link.put(l15,b15);
-		link.put(l16,b16);
-		link.put(l17,b17);
-		link.put(l18,b18);
-		link.put(l19,b19);
-		link.put(l20,b20);
 		new CSNBetterVersion();
 	}
 	
@@ -271,24 +251,35 @@ public class CSNBetterVersion extends JFrame {
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
 			// TODO Auto-generated method stub
+			
+			HashMap<JLabel, JButton> link = new HashMap<JLabel, JButton>();
+			link.put(l1,b1);
+			link.put(l2,b2);
+			link.put(l3,b3);
+			link.put(l4,b4);
+			link.put(l5,b5);
+			link.put(l6,b6);
+			link.put(l7,b7);
+			link.put(l8,b8);
+			link.put(l9,b9);
+			link.put(l10,b10);
+			link.put(l11,b11);
+			link.put(l12,b12);
+			link.put(l13,b13);
+			link.put(l14,b14);
+			link.put(l15,b15);
+			link.put(l16,b16);
+			link.put(l17,b17);
+			link.put(l18,b18);
+			link.put(l19,b19);
+			link.put(l20,b20);
+			
 			JButton b = (JButton) arg0.getSource();
 			JLabel l = null;
-			System.out.println("1");
-			System.out.println(link);
 			for (Map.Entry<JLabel, JButton> entry : link.entrySet())
 			{
-				System.out.println("2");
-		    	System.out.println("-----------------------------");
-				System.out.println(b);
-		    	System.out.println("-----------------------------");
-				System.out.println(entry.getKey());
-				System.out.println("-----------------------------");
-				System.out.println(entry);
 			    if (entry.getValue() == b) {
-			    	System.out.println("------------/-----------------");
 	            	  l = entry.getKey();
-	            	  System.out.println(l);
-	            	  System.out.println("-------------/----------------");
 			    }}
 			
 			/**for (JLabel o : link.keySet()) {
@@ -300,7 +291,6 @@ public class CSNBetterVersion extends JFrame {
 	            	  System.out.println("-----------------------------");  
 	              }
 			}**/
-			System.out.println("3");
 	            if(lINIT.getText() != "") {
 					if ( b.getText() == "") {
 						counter ++;
@@ -433,6 +423,7 @@ public class CSNBetterVersion extends JFrame {
 		@Override
 		public void actionPerformed(ActionEvent arg0)  {
 			// TODO Auto-generated method stub
+					
 			winCounter = 0;
 			counter = 0;
 			start.setText("restart");
